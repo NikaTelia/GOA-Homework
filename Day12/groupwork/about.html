@@ -1,0 +1,79 @@
+<head>
+    <nav>
+        <button style="background: linear-gradient(green, darkgreen); font-family: 'Arial', sans-serif; color: white; border: none; padding: 10px 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+                onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='limegreen';" 
+                onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='';">
+            <a href="home.html" style="text-decoration: none; color: white;">Home</a>
+        </button>
+        <button style="background: linear-gradient(green, darkgreen); font-family: 'Arial', sans-serif; color: white; border: none; padding: 10px 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+                onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='limegreen';" 
+                onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='';">
+            <a href="about.html" style="text-decoration: none; color: white;">About</a>
+        </button>
+        <button style="background: linear-gradient(green, darkgreen); font-family: 'Arial', sans-serif; color: white; border: none; padding: 10px 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+                onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='limegreen';" 
+                onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='';">
+            <a href="contact.html" style="text-decoration: none; color: white;">Contacts</a>
+        </button>
+        <button style="background: linear-gradient(green, darkgreen); font-family: 'Arial', sans-serif; color: white; border: none; padding: 10px 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='limegreen';" 
+        onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='';">
+    <a href="information.html" style="text-decoration: none; color: white;">information</a>
+</button>
+<button style="background: linear-gradient(green, darkgreen); font-family: 'Arial', sans-serif; color: white; border: none; padding: 10px 20px; cursor: pointer; transition: transform 0.3s, background-color 0.3s;" 
+onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='limegreen';" 
+onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='';">
+<a href="Login.html" style="text-decoration: none; color: white;">Login</a>
+</button>
+  </button>
+    </nav>
+  </head>
+    <body>
+    <h1 style="font-family: 'comic Sans MS', Comic Sans MS;">About GOA Academy</h1>
+    <p style="font-family: 'comic Sans MS', Comic Sans MS;"> Goa is a oriented academy for programming students.</p>
+    <p style="font-family: 'comic Sans MS', Comic Sans MS;"> There you will find many friends who will help you,</p>
+    <p style="font-family: 'comic Sans MS', Comic Sans MS;"> and you will also be able to learn how to create</p>
+    <p style="font-family: 'comic Sans MS', Comic Sans MS;"> websites and learn many programming languages.</p>
+    <p style="font-family: 'comic Sans MS', Comic Sans MS;"> We will be waiting for you.</p>
+    </body>
+
+    <footer>
+        <small>if you want Contact us go to <a href="contact.html">contact pages</a></small>
+      </footer>
+
+      
+    <!--background-->
+    <body style="background-color: black; color: rgb(220, 255, 220); font-family: 'Courier New', monospace;">
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
+            <canvas id="matrixCanvas" style="display: block;"></canvas>
+            <script>
+                const canvas = document.getElementById('matrixCanvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+  
+                const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                const fontSize = 16;
+                const columns = canvas.width / fontSize;
+                const drops = Array(Math.floor(columns)).fill(1);
+  
+                function drawMatrix() {
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = '#0F0';
+                    ctx.font = `${fontSize}px monospace`;
+  
+                    drops.forEach((y, x) => {
+                        const text = letters[Math.floor(Math.random() * letters.length)];
+                        ctx.fillText(text, x * fontSize, y * fontSize);
+                        if (y * fontSize > canvas.height && Math.random() > 0.975) {
+                            drops[x] = 0;
+                        }
+                        drops[x]++;
+                    });
+                }
+  
+                setInterval(drawMatrix, 50);
+            </script>
+        </div>
+    </body>

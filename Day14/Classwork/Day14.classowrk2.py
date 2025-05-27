@@ -1,0 +1,5 @@
+people = int(input ('input people:'))
+time = int(input('input time:'))
+Turn = bool(input('input true or false '))
+lightsOn = (people > 2 and time >= and Turn)
+print(lightsOn)
