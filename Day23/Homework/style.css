@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(6, 250, 254);
+}
+.paraghram  {
+   width: 20px;
+   color: darkblue;
+}
+button {
+    background-color: black;
+    color: white;
+}
