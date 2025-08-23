@@ -1,0 +1,25 @@
+#headline {
+    color: red;
+}
+
+.info {
+    color: blue;
+}
+
+.main-btn {
+    background-color: black;
+    color: white;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+
+.important {
+    width: 400px;
+    height: 240px;
+    background-color: aqua;
+    color: aquamarine;
+}
