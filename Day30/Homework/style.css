@@ -1,0 +1,21 @@
+.Link {
+   color: green;
+}
+.Link:hover {
+    color: yellow;
+}
+.Link:active {
+    color: red;
+}
+
+.button {
+    color: gray;
+}
+
+.button:hover {
+    color: blue;
+}
+
+.button:active {
+    color: green;
+}

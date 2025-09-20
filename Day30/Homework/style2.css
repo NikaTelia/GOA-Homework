@@ -1,0 +1,26 @@
+.Link {
+    color: black;
+}
+.Link:visited {
+    color: purple;
+}
+
+.ff:hover{
+    color: red;
+}
+
+.f:hover {
+    color: blue;
+}
+
+.ii {
+    color: black;
+}
+
+.ii:hover {
+    color: green;
+}
+
+.ii:visited {
+    color: brown;
+}
