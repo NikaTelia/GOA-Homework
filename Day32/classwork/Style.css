@@ -1,0 +1,12 @@
+tr:nth-child(3) {
+    background-color: gold;
+}
+tr:nth-child(2) {
+    background-color: silver;
+}
+tr:nth-child(5) {
+    background-color: brown;
+}
+tr {
+    background-color: rgb(217, 214, 214);
+}
