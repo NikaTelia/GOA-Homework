@@ -8,14 +8,14 @@ def square(n):
 
 square(3)
 
-def even(nums):
-    if nums % 2 == 0:
+def is_even(n):
+    if n % 2 == 0:
         print('ლუწია')
     else:
         print('კენტია')
 
-even(4)
-even(3)
+is_even(4)
+is_even(3)
 
 def maximum(a, b, c):
     print(max(a, b, c))
@@ -23,7 +23,7 @@ def maximum(a, b, c):
 maximum(34, 12, 45)
 
 
-def maximum(word):
-    print(word[::-1])
+def reverse_text(txt):
+    print(txt[::-1])
 
-maximum('python')
+reverse_text('python')
