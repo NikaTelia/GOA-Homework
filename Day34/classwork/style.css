@@ -1,0 +1,19 @@
+.box {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(213, 112, 112);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.boxx {
+    margin-top: 20px;
+}
+
+.Topbox, .boxx {
+    display: flex;
+    gap: 20px;
+}
