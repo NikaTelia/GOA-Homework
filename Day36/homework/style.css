@@ -1,0 +1,48 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+}
+
+
+.color {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+}
+
+
+.color2 {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+}
+
+.color3{
+    background-color: yellow;
+    order: -1;
+    width: 150px;
+    height: 150px;
+}
+
+.color2{
+    background-color: yellow;
+    order: 4;
+    width: 150px;
+    height: 150px;
+}
+
+.box1 {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.color1 {
+    background-color: yellow;
+    order: 3;
+    width: 150px;
+    height: 150px;
+}

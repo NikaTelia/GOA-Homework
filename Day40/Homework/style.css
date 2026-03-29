@@ -1,0 +1,46 @@
+.box {
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    transition: background-color 0.5s ease;
+}
+
+.box:hover {
+    background-color: yellowgreen;
+}
+
+.click {
+    transition: 0.5s ease;
+}
+
+.click:hover{
+    transform: scale(1.2);
+}
+
+.image {
+    transition: opacity 0.4 ease;
+}
+
+.image:hover{
+    opacity: 0.7;
+}
+
+.paragharp {
+    color: blue;
+    transition: color 0.7 ease;
+} 
+.paragharp:hover {
+    color: red;
+}
+
+
+.cube {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    transition: 1s ease;
+}
+
+.cube:hover {
+    border-radius: 100%;
+}

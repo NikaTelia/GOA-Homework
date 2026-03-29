@@ -1,0 +1,14 @@
+
+
+.children {
+    background-color: blue;
+    height: 300px;
+    width: 200px;
+}
+
+.Box:nth-child(2) {
+    display: grid;
+    grid-column: span 2;
+    gap: 10px;
+}
+

@@ -1,0 +1,15 @@
+
+
+.children {
+    background-color: blue;
+    height: 300px;
+    width: 200px;
+}
+
+.Box {
+    display: grid;
+    /*grid-template-columns: 100px 100px 100px;*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+

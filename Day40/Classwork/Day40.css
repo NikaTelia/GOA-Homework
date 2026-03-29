@@ -1,0 +1,63 @@
+.box {
+    background-color: rgb(113, 94, 93);
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    transform: skew(25deg); /*ერთ წერილაბდე წელავს მეორეს*/
+}
+.box1 {
+    background-color: rgb(111, 44, 44);
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    transform: translateY(-50px); /*ამოძრავებს ტექტს y-ზე მაგალითად 50px*/
+}
+.box2 {
+    background-color: rgb(82, 13, 13);
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    transform: translate(50px); /*ამოძრავებს ტექტს x-ზე მაგალითად 50px*/
+}
+.box3 {
+    background-color: rgb(134, 9, 9);
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    transform: scale(0.6); /*ადიდებს ტექტს მაგალითად 0.6*/
+}
+.box4 {
+    background-color: rgb(251, 29, 29);
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    transform: rotate(30deg); /*ატრიალებს ტექტს მაგალითად 30*/
+}
+.box5 {
+    background-image: linear-gradient(to bottom right, red, rgb(53, 31, 31)); /*აკათებს გრადიენტს*/
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+}
+
+button {
+    width: 50px;
+    height: 55px;
+    transition: transform 0.3s ease;
+    background-color: blue;
+}
+button:hover {
+    transform: scale(1.2);
+    background-color: rgb(59, 59, 90);
+}
+
+.anim {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    transition: transform 3s, background-color 5s;
+}
+.anim:hover {
+    transform: scale(2);
+    background-color: yellow;
+}
