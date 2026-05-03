@@ -1,0 +1,80 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: green;
+  animation: anim 3s linear forwards;
+}
+
+@keyframes anim {
+  from {
+    left: 0;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+
+.par {
+  animation: color 2s infinite alternate;
+}
+
+@keyframes color {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
+
+
+.rotating {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  animation: box 2s linear infinite;
+}
+
+@keyframes box {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scale {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  animation: scaling 2s ease-in-out infinite alternate;
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: red;
+  top: 200px;
+  left: 200px;
+  animation: moving 4s linear infinite;
+}
+
+@keyframes moving {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}

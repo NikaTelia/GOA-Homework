@@ -1,0 +1,31 @@
+/*responiv დიზაინი არის როდესაც სხვა ზომებს აქვს სხვლა სტაილი (მაგ პლანშეტი, ტელეფონი ან ლეპტოპი*/
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.red {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+}
+
+
+@media(max-width:800px){
+    .red{
+        background-color: yellow;
+
+    }
+}
+
+
+
+@media(max-width:400px){
+    .red{
+        background-color: blue;
+
+    }
+}
+

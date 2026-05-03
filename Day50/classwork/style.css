@@ -1,0 +1,13 @@
+body {
+    background-image: url(dog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body {
+    background-image: url(dog.jpg); - ფოტოს ჩასმა
+    background-repeat: no-repeat; - არ ამეორებს ფოტოს (მაგ თუ ფოტო არის პატარა, გამოტევებული ადგილის ფოტო იდგმევა) 
+    background-size: cover; - ზომას უკეთებს cover  - არის მაქსიმალური ზომა, contain - არის მინიმალური ზომა
+    background-position: center; - ჩავს ფოტოს/ადგილს შუაშია
+}
+*/

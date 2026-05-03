@@ -1,0 +1,17 @@
+.box {
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    width: 550px;
+    height: 550px;
+}
+/*რომ შევქმნათ ანიმიცია keyword '@' ანუ @keywords 'name' და მერე %*/
+@keyframes box {
+    0%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: aquamarine;
+    }
+}
+

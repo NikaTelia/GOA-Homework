@@ -1,0 +1,28 @@
+.box{
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    animation-name: cube;
+    animation-iteration-count: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes cube{
+100% {
+    background-color: yellow;
+}
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 100%;
+    animation: ball 2s infinite;
+}
+@keyframes ball{
+100% {
+    background-color: green;
+    scale: 2;
+}
+}

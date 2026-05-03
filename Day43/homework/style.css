@@ -1,0 +1,54 @@
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  transition: background-color 0.5s ease;
+}
+
+.box:hover {
+  background-color: red;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+
+.text {
+  font-size: 18px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.text:hover {
+  opacity: 0.5;
+}
+
+
+.shadow {
+  width: 150px;
+  height: 150px;
+  background: gray;
+  transition: box-shadow 0.4s ease;
+}
+
+.shadow:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+.image {
+  width: 200px;
+  transition: transform 0.4s ease;
+}
+
+.image:hover {
+  transform: rotate(10deg);
+}
